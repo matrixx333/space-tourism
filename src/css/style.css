@@ -115,6 +115,7 @@ section {
 
 body {
 	line-height: 1;
+	color: white;
 }
 
 ol,
@@ -141,7 +142,7 @@ table {
 }
 
 body {
-	background-image: url("../assets/home/background-home-desktop.jpg");
+	background-image: url("../../assets/home/background-home-desktop.jpg");
 	font-family: serif;
 	color: var(--color-neutral-100);
 	background-size: cover;
@@ -252,10 +253,28 @@ button:hover {
 	cursor: pointer;
 }
 
-/* tablet size */
-@media screen and (max-width: 768px) {
+/* mobile size */
+@media screen and (max-width: 375px) {
 	body {
-		background-image: url("../assets/home/background-home-tablet.jpg");
+		background-image: url("../../assets/home/background-home-mobile.jpg");
+		background-size: cover;
+	}
+
+	.container {
+		height: 100vh;
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: auto;
+		grid-template-areas: "header"
+			"space"
+			"explore";
+	}
+}
+
+/* tablet size */
+/* @media screen and (max-width: 768px) {
+	body {
+		background-image: url("../../assets/home/background-home-tablet.jpg");
 		background-size: cover;
 	}
 
@@ -322,4 +341,4 @@ button:hover {
 		margin-left: 20px;
 		margin-right: 20px;
 	}
-}
+} */
